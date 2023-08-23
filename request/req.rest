@@ -1,0 +1,31 @@
+@baseUrl = http://127.0.0.1:8000/
+
+
+###
+GET {{baseUrl}}api/auths HTTP/1.1
+content-type: application/json
+
+
+###
+POST {{baseUrl}}/api/auths HTTP/1.1
+content-type: application/json
+
+{
+    "username": "7chrisred",
+    "email": "7chrisred@gmail.com",
+    "password": "7chrisred17."
+}
+
+###
+PUT {{baseUrl}}/api/auths/8 HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Christian Sole",
+    "email": "chris-redfield@gmail.com",
+    "password": "Christi."
+}
+
+###
+DELETE  {{baseUrl}}/api/auths/6 HTTP/1.1
+content-type: application/json
